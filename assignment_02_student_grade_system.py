@@ -45,3 +45,18 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+score=int(input("Enter student score (0-100): "))
+if score<0 or score>100:
+    print("Error: Score must be between 0 and 100.")
+else:
+    if score >= 80:
+        grade = "A"
+    elif score >= 73:
+        grade = "B"
+    elif score >= 60:
+        grade = "C"
+    elif score >= 50:
+        grade = "D"
+    else:
+        grade = "F"
+    print(f"Grade: {grade}")
